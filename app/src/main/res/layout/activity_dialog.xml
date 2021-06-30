@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarm.DialogActivity"
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/header_login"
+        android:elevation="5dp" />
+
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="-100dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circletransparant" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="326dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="344dp"
+                android:text="Lets start the journy!"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/im"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+
+                android:id="@+id/im"
+                android:layout_width="332dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="112dp"
+                android:src="@drawable/m"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.157"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/yesbtn"
+                android:layout_width="83dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="188dp"
+                android:background="@drawable/yes"
+                android:text="Yes"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/snoozebtn"
+                android:layout_width="82dp"
+                android:layout_height="43dp"
+
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/snooze"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageButton
+                android:id="@+id/nobtn"
+                android:layout_width="83dp"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/cancel"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/circle4"
+        android:layout_width="259dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-68dp"
+        android:layout_marginBottom="-50dp"
+        android:layout_toLeftOf="@+id/circle3"
+        android:src="@drawable/circletransparant" />
+
+
+
+
+</RelativeLayout>

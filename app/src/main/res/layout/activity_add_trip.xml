@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTrip">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bgHeader"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/header_register"
+        android:elevation="5dp"
+        android:theme="@style/Widget.AppCompat.Toolbar" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="28dp"
+        android:layout_height="307dp"
+        android:layout_below="@+id/bgHeader"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/circletransparant" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="104dp"
+        android:layout_height="220dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/circle" />
+
+
+    <ImageView
+        android:id="@+id/h"
+        android:layout_width="491dp"
+        android:layout_height="152dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginBottom="-130dp"
+        android:background="@drawable/circle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgorund">
+
+
+        <ImageView
+            android:id="@+id/tripn"
+            android:layout_width="160dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/trip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/tripNameTxt"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="trip name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripn" />
+
+        <EditText
+            android:id="@+id/fromPoint"
+            android:layout_width="139dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:hint="From Point"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripNameTxt"
+            tools:text="From Point" />
+
+        <EditText
+            android:id="@+id/toPoint"
+            android:layout_width="141dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:hint="To Point"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripNameTxt"
+            tools:text="To Point" />
+
+        <ImageView
+            android:id="@+id/calenderImage"
+            android:layout_width="110dp"
+            android:layout_height="78dp"
+
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fromPoint"
+            app:srcCompat="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/alarmImage"
+            android:layout_width="103dp"
+            android:layout_height="82dp"
+
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toPoint"
+            app:srcCompat="@drawable/digital" />
+
+        <Spinner
+            android:id="@+id/repeatedSpinner"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="236dp"
+            android:entries="@array/repeated_array"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/tripSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:entries="@array/trip_array"
+            app:layout_constraintBottom_toBottomOf="@+id/repeatedSpinner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calenderImage" />
+
+        <TextView
+            android:id="@+id/idconfirm"
+            android:layout_width="265dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="116dp"
+            android:text="confirm the trip !"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripSpinner" />
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/yestrip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/notrip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+
+
+            android:layout_marginTop="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripn"
+            app:srcCompat="@drawable/exch" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

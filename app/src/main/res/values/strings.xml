@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mashawery</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="channel_name">mshwar</string>
+    <string name="channel_description">mshwarDesc</string>
+    <string name="CHANNEL_ID">1</string>
+
+    <string name="menu_history">History</string>
+    <string name="menu_upcomming">Upcomming</string>
+    <string name="menu_sync">Sync</string>
+    <string name="menu_logout">Logout</string>
+
+</resources>

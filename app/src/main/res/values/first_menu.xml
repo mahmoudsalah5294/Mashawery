@@ -1,0 +1,8 @@
+<resources>
+    <string-array name="repeated_array">
+        <item>No Repeated</item>
+        <item>Repeated daily</item>
+        <item>Repeated weekly</item>
+        <item>Repeated Monthly</item>
+    </string-array>
+</resources>

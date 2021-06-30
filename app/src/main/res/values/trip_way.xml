@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="trip_array">
+        <item>One Way Trip</item>
+        <item>Round Trip</item>
+    </string-array>
+</resources>

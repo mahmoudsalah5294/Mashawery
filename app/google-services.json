@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "99243793711",
+    "project_id": "mashawery",
+    "storage_bucket": "mashawery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99243793711:android:c2bbf6d11b4999bd2015da",
+        "android_client_info": {
+          "package_name": "com.mnm.mashawery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99243793711-vrd8tf2lm8j8egiltgub2n4h1522o163.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mnm.mashawery",
+            "certificate_hash": "7746d2b079ef8672b4e68e351c1f022260dae0c6"
+          }
+        },
+        {
+          "client_id": "99243793711-un0v91qmek96nh2s7d7sq0mlkujgdh83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3zObGIZzFL-m8FlXoR4HDHnzrcoRDYiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99243793711-un0v91qmek96nh2s7d7sq0mlkujgdh83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
